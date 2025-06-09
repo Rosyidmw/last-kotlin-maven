@@ -8,6 +8,7 @@ fun main() {
     val a = 15
     val b = 10
     val c = add(a, b)
+    val b = 5
     println(c)
     println(c)
 
