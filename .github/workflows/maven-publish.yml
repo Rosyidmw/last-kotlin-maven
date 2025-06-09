@@ -1,8 +1,10 @@
 name: Maven Package
 
 on:
+  push:
+    branches: [ "master" ]
   pull_request:
-    branches: [main]
+    branches: [ "master" ]
   release:
     types: [created]
 
