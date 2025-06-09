@@ -7,6 +7,6 @@ fun main() {
     println("Program Penjumlahan Sederhana")
     val a = 15
     val b = 10
-    val c = add(a, b)
+    val c = add(a b)
     println(c)
 }
