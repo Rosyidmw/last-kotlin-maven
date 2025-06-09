@@ -7,6 +7,6 @@ class MainTest {
     @Test
     fun testAdd() {
         val result = add(10, 10)
-        assertEquals(20, result)
+        assertEquals(20, result) 
     }
 }
