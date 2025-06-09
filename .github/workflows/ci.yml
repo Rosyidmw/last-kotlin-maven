@@ -32,6 +32,17 @@ jobs:
     - name: Run Unit Tests
       run: mvn test
 
+    # Continuous Delivery (package app & create release)
+    - name: Package Project
+      run: mvn package
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: v1.0.${{ github.run_number }}
+        name: Release v1.0.${{ github.run_number }}
+        files: target/*.jar
+
     # Continuous Inspection (static analysis using SpotBugs)
     - name: Run SpotBugs Analysis
       run: mvn spotbugs:check
