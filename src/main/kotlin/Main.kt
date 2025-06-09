@@ -16,5 +16,5 @@ fun main() {
         numbers.add(i)  // Bug: memory bisa terus bertambah tanpa dibersihkan
     }
     println("Total numbers: ${numbers.size}")
-    numbers.clear()
+    numbers.clear() 
 }
