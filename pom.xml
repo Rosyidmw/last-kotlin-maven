@@ -8,6 +8,8 @@
     <artifactId>last-kotlin-maven</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+         
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.code.style>official</kotlin.code.style>
