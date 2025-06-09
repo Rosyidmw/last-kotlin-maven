@@ -10,4 +10,7 @@ fun main() {
     val c = add(a, b)
     println(c)
     println(c)
+
+    val text: String? = null
+    println(text.length)
 }
