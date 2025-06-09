@@ -1,6 +1,8 @@
+var total: Int = 0
 // Main.kt
 fun add(a: Int, b: Int): Int {
     return a + b
+    return total
 }
 
 fun main() {
