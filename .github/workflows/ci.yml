@@ -27,3 +27,7 @@ jobs:
     # Continuous Integration (compile code)
     - name: Build Project
       run: mvn clean compile
+
+    # Continuous Testing (run unit tests)
+    - name: Run Unit Tests
+      run: mvn test
