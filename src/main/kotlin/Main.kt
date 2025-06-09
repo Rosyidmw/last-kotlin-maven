@@ -1,6 +1,6 @@
 // Main.kt
 fun add(a: Int, b: Int): Int {
-    return a + b
+    return a - b
 }
 
 fun main() {
@@ -10,4 +10,5 @@ fun main() {
     val c = add(a, b)
     println(c)
     println(c)
+    println("Hasil: $a + $b = $c")
 }
