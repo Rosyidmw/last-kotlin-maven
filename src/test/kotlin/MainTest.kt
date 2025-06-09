@@ -6,7 +6,7 @@ class MainTest {
 
     @Test
     fun testAdd() {
-        val result = add(15, 10)
-        assertEquals(25, result)
+        val result = add(10, 10)
+        assertEquals(20, result)
     }
 }
