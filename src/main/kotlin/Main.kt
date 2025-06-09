@@ -10,4 +10,9 @@ fun main() {
     val c = add(a, b)
     println(c)
     println(c)
+
+    val numbers = mutableListOf<Int>()
+    for (i in 1..1000000) {
+        numbers.add(i)  // Bug: memory bisa terus bertambah tanpa dibersihkan
+    }
 }
