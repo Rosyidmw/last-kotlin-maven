@@ -12,9 +12,9 @@ fun main() {
     println(c)
 
     val numbers = mutableListOf<Int>()
-    for (i in 1..10) {
+    for (i in 1..100) {
         numbers.add(i)  // Bug: memory bisa terus bertambah tanpa dibersihkan
     }
-    println("Total numbers: ${numbers.size}")
-    numbers.clear()
+    // println("Total numbers: ${numbers.size}")
+    // numbers.clear()
 }
