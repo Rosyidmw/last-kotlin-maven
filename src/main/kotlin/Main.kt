@@ -5,8 +5,8 @@ fun add(a: Int, b: Int): Int {
 
 fun main() {
     println("Program Penjumlahan Sederhana")
-    val a = 15
-    val b = 10
+    val a = 20
+    val b = 5
     val c = add(a, b)
     println(c)
     println(c)
