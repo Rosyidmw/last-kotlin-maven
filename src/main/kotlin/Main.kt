@@ -9,4 +9,5 @@ fun main() {
     val b = 10
     val c = add(a, b)
     println(c)
+    println(c)
 }
