@@ -1,0 +1,29 @@
+name: CI/CD Kotlin Maven
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Show Maven Version
+      run: mvn -v
+
+    # Continuous Integration (compile code)
+    - name: Build Project
+      run: mvn clean compile
